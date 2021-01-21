@@ -1,0 +1,48 @@
+ 
+     body {
+    background-color: rgba(247, 170, 4, 0.979);
+    }
+
+     #h1 {
+       color :rgb(75, 8, 169);
+
+     }
+    #centerId {
+  align-content:center;
+
+}
+    #fotos{ 
+        
+     width: 400px;
+
+    }
+    #ThirDiv {
+    align-content:center;
+    background-color: rgb(122, 161, 233)  ;
+    border-color: rgb(236, 230, 228);
+    border-style: double;
+    height: 600px;
+    width: 500px;
+    padding: 50px;
+    color: green;
+  }
+    
+    #divClass {
+    align-content:center;
+    border-color: saddlebrown;
+    border-style: solid;
+    background-color: rgb(225, 224, 230);    
+    font-size : 12px;
+    color : rgb(22, 13, 13);
+    
+}
+
+   #spanId {
+    align-content:center; 
+    font-size: 18px;
+     font-style:italic;
+    color :black;
+    margin : 50px;
+    }
+       
+
