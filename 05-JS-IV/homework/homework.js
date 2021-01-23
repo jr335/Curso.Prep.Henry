@@ -22,13 +22,12 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  var objeto = {
-    nombre: nombre,
-    edad: edad,
-      };
-  objeto(property) = null;
-      return objeto;
-}
+   objeto[property] = null; 
+
+   return objeto;
+ }
+  
+
 
 
 function invocarMetodo(objeto, metodo) {
@@ -111,19 +110,19 @@ function tienePropiedad(objeto, propiedad) {
   }
 
 
-function verificarPassword(usuario, password) {
+function verificarPassword(usuario, password){
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  var usuario = {
-    nombre: nombre,
-    email: email,
-    password: password,
-  }
-   return usuario['password'] === password;
-    }
 
+  if (usuario.password === password){
+    return true
+  }
+   else {
+   return false  
+  }
+}
   
 
 
@@ -171,15 +170,13 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-  usuario = {
-
-    posts: [{likes: 4}]
-  };
-  var suma = 0;
-
+   
+  var suma = 0
+  usuario.posts[i]
   for(var i = 0; i < usuario.posts.length; i++) {
     suma = suma + usuario.posts[i].likes;
-  }
+ 
+}
 
   return suma;
 

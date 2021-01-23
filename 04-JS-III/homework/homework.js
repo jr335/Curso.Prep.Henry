@@ -3,25 +3,28 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
-  const array = [ 'Martin', 'Antonio', 'Sara', 'Samuel'];
+   array = [ 'Martin', 'Antonio', 'Sara', 'Samuel'];
   return array [0];
 {
+
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  const array = [ 'Martin', 'Antonio', 'Sara', 'Samuel'];{
-  return (array[array.length - 1]);
+  array = [ 'Martin', 'Antonio', 'Sara', 'Samuel'];
+  i=0
+    return (array.length - 1);
 }
-}
+
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  const array = [ 'Martin', 'Antonio', 'Sara', 'Samuel'];
-  largo = array.length;
-  return largo;
+  array = [ 'Martin', 'Antonio', 'Sara', 'Samuel'];
+  //return (array.length);
+  return (array.length-1);
 }
+ 
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -168,4 +171,6 @@ module.exports = {
   promedioResultadosTest,
   numeroMasGrande,
   multiplicarArgumentos,
-  };
+
+};
+

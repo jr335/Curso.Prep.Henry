@@ -104,11 +104,6 @@ function menosQueNoventa() {
 
 }
 
-
-
-
-
-
 function mayorQueCincuenta() {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
@@ -118,6 +113,8 @@ function mayorQueCincuenta() {
  
 }
 }
+
+
 
 function obtenerResto() {
   // Obten el resto de la división de "x" entre "y"
