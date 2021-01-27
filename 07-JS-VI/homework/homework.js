@@ -10,22 +10,23 @@ function sumarArray(numeros, cb) {
   // Suma todos los números enteros (int/integers) de un array ("numeros")
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
-  numeros = [1 , 2 , 3 , 4]
-  var suma = 0;
-  for(var i = 0; i < numeros.length; i++) {
-   suma = suma + numeros[i];
-   }
-   cb(suma);
+  //numeros = [1 , 2 , 3 , 4]
+  var total = numeros.reduce (function (acc, elemento) {
+  return acc + elemento;
+  }) 
+  cb(total)
 }
+
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
-  var array = [2 , 4 , 6] 
-    for(var i = 0; i < array.length; i++ ){
-      cb(array[i]);
-    }
-  }
+   array.forEach (function(elemento) {
+   cb(elemento);
+    
+   })
+ 
+}
 
 
 
@@ -33,12 +34,12 @@ function map(array, cb) {
   // Crea un nuevo array
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
-  var array = [2 , 4 , 6] 
-  for(var i = 0; i < array.length; i++ ){
-    cb(array[i]);
-    var nuevoArray = array.map(cb);
-    return nuevoArray;
-    }
+   //var nuevoArray = array.length
+   var nuevoArray = array.map(function(elemento) {
+
+    return cb(elemento);
+  });
+  return nuevoArray;
   }
 
 

@@ -1,8 +1,8 @@
 // No cambies los nombres de las funciones.
 
-function crearGato(nombre, edad);{
-  // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
-  // Agrega una propiedad al objeto con el nombre "edad" y usa el valor definido en el argumento "edad"
+function crearGato(nombre, edad) {
+  // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento /////"nombre".
+  // Agrega una propiedad al objeto con el nombre "edad" y usa el valor definido en el ///////// argumento "edad"
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
@@ -10,81 +10,76 @@ function crearGato(nombre, edad);{
     nombre: nombre,
     edad: edad,
     meow: function() {
-      return 'Meow!';
+      return "Meow!";
     }
-  };
+  }
   return obj;
 }
 
 
-function agregarPropiedad(objeto, property);{
+function agregarPropiedad(objeto, property){
+
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
   // Devuelve el objeto
-  // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
+  // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento //// llamado "property" (una cadena/string)
   // Tu código:
-   objeto[property] = null; 
+  objeto[property] = null;
+  return objeto;
 
-   return objeto;
- }
+} 
   
+ 
 
 
-
-function invocarMetodo(objeto, metodo);{
+function invocarMetodo(objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-   objeto = {
-    nombre: nombre,
-    edad: edad,
-  }
-  objeto [metodo]();
-}
+   objeto [metodo]()
+    
+   }
+       
 
 
 
-function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso);{
+
+function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso){
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  objetoMisterioso = {
-     numeroMisterioso: 4,
-     }
-    var result = objetoMisterioso.numeroMisterioso * 5;
-  
-    return result;
-  }
+  var  producto = objetoMisterioso.numeroMisterioso * 5;
+   
+       return producto;  
+} 
 
 
-function eliminarPropiedad(objeto, propiedad);{
+function eliminarPropiedad(objeto, propiedad){
   // Elimina la propiedad "propiedad" de "objeto"
   // Devuelve el objeto
   // Tu código:
-  objeto = {
-   propiedad : (property), 
-  }
-    delete objeto[propiedad];
+  //objeto = {
+  //      objeto: propiedad, 
+  //     }
+     delete objeto[propiedad];
     return objeto;
   }
 
-function nuevoUsuario(nombre, email, password);{
+function nuevoUsuario(nombre, email, password){
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
- 
-  var obj = {
+   var obj = {
     nombre: nombre,
     email: email,
     password: password,
   };
-
   return obj;
  }
 
 
 
-function tieneEmail(usuario);{
+function tieneEmail(usuario){
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
@@ -97,7 +92,7 @@ function tieneEmail(usuario);{
 }
 
 
-function tienePropiedad(objeto, propiedad);{
+function tienePropiedad(objeto, propiedad){
   // Devuelve "true" si el objeto tiene el valor del argumento "propiedad"
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
@@ -110,7 +105,7 @@ function tienePropiedad(objeto, propiedad);{
   }
 }
 
-function verificarPassword(usuario, password);{
+function verificarPassword(usuario, password){
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
@@ -127,7 +122,7 @@ function verificarPassword(usuario, password);{
 
 
 
-function actualizarPassword(usuario, nuevaPassword);{
+function actualizarPassword(usuario, nuevaPassword){
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
@@ -187,12 +182,9 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-   var producto = {
-      precio: 10,
-     porcentajeDeDescuento: 0.5,
-          };
-    producto.calcularPrecioDescuento = function() {
-      return this.precio -(this.precio * this.porcentajeDeDescuento );
+   
+   producto.calcularPrecioDescuento = function() {
+      return this.precio - (this.precio * this.porcentajeDeDescuento );
     };
     return producto;
   }

@@ -7,8 +7,8 @@ function crearUsuario() {
   // El `contructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre es {{nombre}}'
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
-  // Tu código:
-  class Usuario {opciones}  {
+  // Tu cód{igo:
+  function Usuario(opciones)  {
    this.usuario = opciones.usuario;
     this.nombre = opciones.nombre;
     this.email = opciones.email;
@@ -32,8 +32,10 @@ function agregarMetodoPrototype(Constructor) {
     return 'Hello World!';
   };
 
-  return Usuario;
+
 }
+
+
 
 function agregarStringInvertida() {
   // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, pero invertida.
@@ -48,11 +50,11 @@ function agregarStringInvertida() {
 
   }
   
-    return 'Hello World!';
+    return stringInvertida;
   };
 
-  return Usuario;
-
+  
+  
 }
 
 // No modificar nada debajo de esta línea
