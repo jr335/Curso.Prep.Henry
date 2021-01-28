@@ -13,7 +13,8 @@
 }
     #fotos{ 
         
-     width: 400px;
+     width: 300px;
+	 height: 300px;	
 
     }
     #ThirDiv {
@@ -28,11 +29,11 @@
   }
     
     #divClass {
-    align-content:center;
+    
     border-color: saddlebrown;
     border-style: solid;
     background-color: rgb(225, 224, 230);    
-    font-size : 12px;
+    font-size : 16px;
     color : rgb(22, 13, 13);
     
 }
